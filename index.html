@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Desafio 12 Condiciones</title>
+    </head>
+    <body>
+        <div class="request1">
+            <div class="img-request1">
+                <img id="blacksmithImage"
+                    onclick="changeColorImg()"
+                    src="https://sm.ign.com/ign_latam/screenshot/default/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f7761747470_d5zz.jpg"
+                    alt="herrero Kimetsu no Yaiba">
+            </div>
+        </div>
+        <div class="request2">
+            <div class="stickersContainer">
+                <div>
+                    <img
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a5f24fb6-46f0-4f23-91a9-38b6e4d436b9/ddbi53o-62210761-62fa-44a6-b384-ed619b6674d6.png/v1/fill/w_1280,h_1280,q_80,strp/haganezuka_hotaru___by_4ccel_ddbi53o-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2E1ZjI0ZmI2LTQ2ZjAtNGYyMy05MWE5LTM4YjZlNGQ0MzZiOVwvZGRiaTUzby02MjIxMDc2MS02MmZhLTQ0YTYtYjM4NC1lZDYxOWI2Njc0ZDYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.R4ZQ5vhVpJaQl0ecZH3VYiT9Pr1QQ28LJv5EnkloU2E"
+                        alt="Hotaru Haganezuka">
+                    <input
+                        type="number"
+                        id="sticker1"
+                        max="10"
+                        placeholder="sticker1">
+                </div>
+                <div>
+                    <input
+                        type="number"
+                        id="sticker2"
+                        max="10"
+                        placeholder="sticker2">
+                </div>
+                <div>
+                    <input
+                        type="number"
+                        id="sticker3"
+                        max="10"
+                        placeholder="sticker3">
+                </div>
+            </div>
+            <div>
+                <button onclick="selectedStickers()">Total stickers</button>
+                <p id="selectedStickers"> </p>
+            </div>
+        </div>
+        <div class="request3">
+            <div class="selectRq3">
+                <select name="selectPsw1" id="selectPsw1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="selectPsw2" id="selectPsw2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="selectPsw3" id="selectPsw3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <div class="buttonRq3">
+                <button
+                    onclick="validatePassword()"
+                >
+                    Validar Contraseña
+                </button>
+                <p id="resValPass"> </p>
+            </div>
+        </div>
+        <script src="./assets/js/scriptCondiciones.js"></script>
+    </body>
+</html>
