@@ -4,10 +4,40 @@
 }
 
 body {
+    width: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid red;
 }
 
 img {
-    width: 250px;
-    height: 300px;
+    width: 85px;
+    height: 90px;
+}
+
+.img-request1 img {
+    cursor: pointer;
+}
+
+.img-request1 img:hover {
+    filter: saturate(150%);
+}
+
+.stickersContainer {
+    display: flex;
+    margin-left: 45px;
+}
+
+input {
+    width: 85px;
+}
+
+.request1, .request2, .request3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 5px;
 }

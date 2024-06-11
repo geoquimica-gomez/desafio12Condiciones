@@ -25,10 +25,13 @@ function validatePassword() {
     const password = value1 + value2 + value3;
 
     if (password === "911") {
-        res.innerHTML = "La contraseña 1 es correcta";
+        res.style.color = "green"
+        res.innerHTML = "La contraseña 1 es correcta &#128079";
     } else if (password === "714") {
-        res.innerHTML = "La contraseña 2 es correcta";
+        res.style.color = "green"
+        res.innerHTML = "La contraseña 2 es correcta &#128079";
     } else {
-        res.innerHTML = "La contraseña NO es correcta";
+        res.style.color = "red"
+        res.innerHTML = "La contraseña NO es correcta &#128542";
     }
 }
